@@ -29,7 +29,6 @@ def load_batch(breed_dir):
     breed_images = os.listdir(breed_dir)
     list = []
     for file in breed_images:
-        print(file)
         if fnmatch.fnmatch(file, '*'+img_extension):
             image = cv2.imread(breed_dir+'/'+file)
             list.append(image)

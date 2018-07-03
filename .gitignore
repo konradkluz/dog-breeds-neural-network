@@ -1,2 +1,5 @@
 .DS_Store
 .DS_Store?
+training_data/*
+!training_data/README.MD
+augumented_data
