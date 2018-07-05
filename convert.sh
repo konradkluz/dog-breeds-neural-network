@@ -6,5 +6,5 @@ tensorflow/bazel-bin/tensorflow/contrib/lite/toco/toco --input_file=breed_class_
   --input_array=Placeholder \
   --output_array=final_result \
   --input_shape=1,224,224,3 \
-  --mean_value=128 \
- --std_value=127
+  --mean_value=0 \
+  --std_value=255
