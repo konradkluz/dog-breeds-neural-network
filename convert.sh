@@ -1,0 +1,10 @@
+tensorflow/bazel-bin/tensorflow/contrib/lite/toco/toco --input_file=breed_class_1_224_model.pb \
+  --input_format=TENSORFLOW_GRAPHDEF \
+  --output_format=TFLITE \
+  --output_file=breed_class_1_224_model.tflite \
+  --inference_type=QUANTIZED_UINT8 \
+  --input_array=Placeholder \
+  --output_array=final_result \
+  --input_shape=1,224,224,3 \
+  --mean_value=0 \
+  --std_value=255
